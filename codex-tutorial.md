@@ -12,8 +12,8 @@ Official Repository: [OpenAI Codex on GitHub](https://github.com/openai/codex)
  
  Type the following commands into PowerShell which can be accessed via the Windows button on a PC.
 
-![Click Windows](images/1.%20Click%20Windows.png)
-![Type PowerShell](images/2.%20Type%20PowerShell.png)
+![Click Windows](1.%20Click%20Windows.png)
+![Type PowerShell](2.%20Type%20PowerShell.png)
 
 ```
 git --version
@@ -21,11 +21,11 @@ node --version
 npm --version
 ```
 
-![Type Git](images/4.%20Type%20git--version.png)
+![Type Git](4.%20Type%20git--version.png)
  
 If any of these print "command not found," install git from <https://git-scm.com> and the LTS version of Node.js from <https://nodejs.org>, then open a new terminal and recheck the downloads again using the same commands.
  
-![What it looks like if Git is not downloaded](images/5.%20Press%20enter%20git%20not%20downloaded.png)
+![What it looks like if Git is not downloaded](5.%20Press%20enter%20git%20not%20downloaded.png)
 
 **Install Codex** using one of the following:
  
@@ -68,7 +68,7 @@ The Codex command-line tool does not have its own "connect GitHub" button. When 
  
 1. On GitHub, open the course repository and click **Fork**, then **Create fork**.
 
-![Fork Created](images/32.%20Fork%20created.png)
+![Fork Created](32.%20Fork%20created.png)
 
 2. On your fork, click the green **Code** button and copy the HTTPS link.
 3. In the terminal, go to the folder where you keep projects, then clone your fork:
@@ -77,7 +77,7 @@ The Codex command-line tool does not have its own "connect GitHub" button. When 
    cd <repo-name>
 ```
  
-   ![Clone your Repo](images/35.%20Clone%20your%20repo.png)
+   ![Clone your Repo](35.%20Clone%20your%20repo.png)
  
 4. Add the original repository as `upstream` so you can pull in new changes later:
 ```
@@ -91,7 +91,7 @@ The Codex command-line tool does not have its own "connect GitHub" button. When 
 2. Type `codex` and press Enter.
 3. Choose **Sign in with ChatGPT**.
 4. A browser window opens. Log in with your ChatGPT account (a free account works) and approve access.
-   ![Sign in with ChatGPT](images/42.%20Web%20browser%20sign-in.png)
+   ![Sign in with ChatGPT](42.%20Web%20browser%20sign-in.png)
 5. Return to the terminal. When a message box appears, Codex is ready.
 6. To leave Codex, press Ctrl + C (twice if needed).
 ### Tell git who you are
@@ -130,13 +130,13 @@ This step links your computer, and therefore Codex, to your GitHub account. It u
    - *Authenticate Git with your GitHub credentials?* **Yes**
    - *How would you like to authenticate GitHub CLI?* **Login with a web browser**
 5. Copy the one-time code shown in the terminal, press Enter, and paste the code into the GitHub page that opens in your browser. Click **Continue**, then **Authorize**.
-   ![One-Time Code](images/newonetimecode.png)
+   ![One-Time Code](newonetimecode.png)
 6. Verify the login:
 ```
    gh auth status
 ```
  
-   ![Device Activation Confirmed](images/52.%20Device%20connection%20confirmed.png)
+   ![Device Activation Confirmed](52.%20Device%20connection%20confirmed.png)
  
 ### Where Codex keeps its settings
  
@@ -155,7 +155,7 @@ The workflows below use a throwaway practice branch so nothing affects the real 
  
    Git replies "Switched to a new branch."
  
-   ![New Branch](images/newbranch.png)
+   ![New Branch](newbranch.png)
  
 2. **Start Codex.**
 ```
@@ -187,7 +187,7 @@ The workflows below use a throwaway practice branch so nothing affects the real 
 ```
  
 8. **Confirm on GitHub.** Open your fork, use the branch dropdown to switch to `codex-practice`, and check that `codex-test.md` is listed.
-   ![codex-test Dropdown](images/64.%20Codex%20test%20file%20md%20in%20dropdown.png)
+   ![codex-test Dropdown](64.%20Codex%20test%20file%20md%20in%20dropdown.png)
 ### Pull Request Workflow
  
 This practice pull request is opened inside your own fork, so it does not add clutter to the original repository.
@@ -200,10 +200,10 @@ This practice pull request is opened inside your own fork, so it does not add cl
    gh pr create --repo <your-username>/<repo-name> --base main --head codex-practice --title "Add Codex test file" --body "Practice pull request."
 ```
  
-   ![Creating Pull Request](images/66.%20PR%20prompt.png)
+   ![Creating Pull Request](66.%20PR%20prompt.png)
  
 2. **View the pull request on GitHub.** Open the link that was printed, or go to the **Pull requests** tab on your fork. Check the title, description, and the **Files changed** tab.
-   ![Looking at PR on Browser](images/68.%20Looking%20at%20PR%20on%20browser.png)
+   ![Looking at PR on Browser](68.%20Looking%20at%20PR%20on%20browser.png)
 3. **Clean up.**
 ```
    git checkout main
