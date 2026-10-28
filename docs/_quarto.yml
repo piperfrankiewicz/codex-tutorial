@@ -113,12 +113,17 @@ book:
         text: "Homebrew (Mac OS)"
       - dev-tools/clis/git.qmd
 
+    - part: "AI Coding Tools"
+      chapters:
+      - href: dev-tools/codex.qmd
+        text: "OpenAI Codex"
+
   # shows up at bottom of page
-  #body-footer: "&copy; Copyright 2024, Your Name Here"
+  #body-footer: "© Copyright 2024, Your Name Here"
 
   page-footer:
     center: |
-      <p>&copy; Copyright 2025, <a href="https://michael-rossetti.org/">Michael J Rossetti</a>.
+      <p>© Copyright 2025, <a href="https://michael-rossetti.org/">Michael J Rossetti</a>.
         Originally created for the <a href="https://ospo.gwu.edu/">GWU Open Source Program Office (OSPO)</a>.
         Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
       </p>
